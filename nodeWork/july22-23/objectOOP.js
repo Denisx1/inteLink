@@ -1,5 +1,5 @@
 // function printTask(id, task) {
-//     let data = task.dueDate.toDateString().split('').slice(3, 10).join('').trim()
+//     let data = task.dueDate.toDateString().match(/\w{3} \d{1,2}/)[0]
 //     if(task.done === true){
 //         console.log(`${id}. [x] ${task.title} ${task.dueDate? task.dueDate.toDateString().split('').slice(3, 10).join('').trim():''}`)
 //         console.log(`${task.desc? task.desc:''}`)
@@ -7,6 +7,7 @@
 //         console.log(`${id}. [ ] ${task.title} ${task.dueDate? task.dueDate.toDateString().split('').slice(3, 10).join('').trim():''}`)
 //         console.log(`${' '}${task.desc? task.desc:''}`)
 //     }
+//     console.log(data)
 
 
 // }
@@ -33,6 +34,8 @@
 //      {done: false,
 //      title: 'Complete first course task', dueDate: new Date('2022-01-17')})
   
+
+
 
 
 
